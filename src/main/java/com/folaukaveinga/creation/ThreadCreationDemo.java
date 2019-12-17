@@ -24,6 +24,8 @@ public class ThreadCreationDemo {
 		customerCallableStart.setName("customerCallableStart");
 		customerCallableStart.start();
 
+		System.out.println("demo is done! - " + Thread.currentThread().getName());
+
 		try {
 			int result = futureTask.get();
 			System.out.println("result: " + result);
@@ -34,6 +36,7 @@ public class ThreadCreationDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
 
 }
